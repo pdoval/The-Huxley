@@ -1,0 +1,7 @@
+# 2 Números em Ordem Crescente
+
+numeros = input()
+lista_entrada = numeros.split(' ')
+lista_ordenada = sorted(lista_entrada)
+saida = ' '.join(lista_ordenada)
+print(saida)
