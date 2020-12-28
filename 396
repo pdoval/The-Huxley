@@ -1,0 +1,15 @@
+# Abaixo a Poluição
+
+casas = 0
+multas = 0
+while True:
+    por_casa = int(input())
+    if por_casa == 999:
+        break
+    elif por_casa > 2:
+        multa_casa = (por_casa - 2) * 12.89
+        multas += multa_casa
+        casas += 1
+    else:
+        pass
+print(f'{multas:.2f}\n{casas}')
