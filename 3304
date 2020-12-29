@@ -1,0 +1,17 @@
+# Função para testar se uma lista está ordenada
+
+def lista_ordenada(args):
+    l = []
+    for i in args:
+        l.append(i)
+    x = sorted(args)
+    return l == x
+
+
+def main():
+    sequencia = eval(input())
+    resultado = lista_ordenada(sequencia)
+    print(str(resultado))
+
+
+main()
