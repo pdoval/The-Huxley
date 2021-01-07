@@ -1,0 +1,41 @@
+# 3 números em ordem crescente
+
+x = 0
+lista = []
+while x < 3:
+    n = input()
+    lista.append(n)
+    x += 1
+
+a = int(lista[0])
+b = int(lista[1])
+c = int(lista[2])
+if a > b and a > c:
+    if b > c:
+        primeiro = c
+        segundo = b
+        terceiro = a
+    else:
+        primeiro = b
+        segundo = c
+        terceiro = a
+elif b > a and b > c:
+    if a > c:
+        primeiro = c
+        segundo = a
+        terceiro = b
+    else:
+        primeiro = a
+        segundo = c
+        terceiro = b
+elif c > a and c > b:
+    if a > b:
+        primeiro = b
+        segundo = a
+        terceiro = c
+    else:
+        primeiro = a
+        segundo = b
+        terceiro = c
+
+print('{0}\n{1}\n{2}'.format(primeiro,segundo,terceiro))
