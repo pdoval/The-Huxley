@@ -1,0 +1,26 @@
+# AC2
+
+segundos = int(input())
+minutos = 0
+horas = 0
+dias = 0
+if segundos >= 60:
+    minutos = segundos // 60
+    seg = segundos % 60
+
+else:
+    seg = segundos
+
+if minutos >= 60:
+    horas = minutos // 60
+    m = minutos % 60
+else:
+    m = minutos
+
+if horas >= 24:
+    dias = horas // 24
+    h = horas % 24
+else:
+    h = horas
+
+print('{0}\n{1}\n{2}\n{3}'.format(dias,h,m,seg ))
